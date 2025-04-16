@@ -1,0 +1,31 @@
+{
+  "translation": {
+    "headerTitle": "Meu Titulo do Cabecalho do {{appName}}"
+  },
+  "dropzone": {
+    "dropFiles": " اسقط الملفات هنا او",
+    "clickUpload": "انقر للتحميل",
+    "acceptedFiles": " انواع الملفات المسموحة هي<span class='en'> png. <span class='ar'>و</span> doc, .docx, .pdf, .txt, .rtf, .jpg</span>. (الحجم 5<span class='en'>MB</span> أو اقل).",
+    "dynamicAcceptedFiles": " انواع الملفات المسموحة هي<span class='en'> {{lastType}} <span class='ar'>و</span> {{types}} </span>. (الحجم 5<span class='en'>MB</span> أو اقل).",
+    "fileTypeError": "صيغة الملف غير مدعومة. يرجى المحاولة مرة أخرى.",
+    "fileSizeError": "حجم الملف كبير جداً. يرجى المحاولة مرة أخرى."
+  },
+  "homePage": {
+    "courseSection": {
+      "title": "تصفح أفضل",
+      "subTitle": "الدورات"
+    },
+    "universitySection": {
+      "title": "اكتشف",
+      "subTitle": "جامعاتنا"
+    },
+    "categorySection": {
+      "title": "اكتشف",
+      "subTitle": "تصنيفتنا"
+    }
+  },
+  "teachers": "المعلمون",
+  "students": "الطلاب",
+  "courses": "الدورات",
+  "videos": "الفيديوهات"
+}

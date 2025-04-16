@@ -1,0 +1,17 @@
+.card {
+  @apply mt-8 text-gray-400 px-10 py-10 bg-gray-800 rounded-lg mb-10;
+  overflow-y: auto;
+  max-height: calc(100vh - 290px);
+  min-width: 500px;
+}
+.tabs-nav {
+  @apply flex w-full pl-1 pt-4;
+}
+
+.tabs-nav .tab-title {
+  @apply text-gray-400 hover:text-white text-base mr-6 font-semibold cursor-pointer transition-colors duration-200 border-orange-400 pb-1 select-none;
+}
+.tab-title.active {
+  color: white !important;
+  @apply border-b;
+}

@@ -1,0 +1,33 @@
+.course-lesson-sidebar {
+  &.p-sidebar {
+    @apply w-full h-full mt-0 rounded-none;
+  }
+  .p-sidebar-content {
+    @apply bg-white;
+  }
+  .sidebar__header {
+    @apply border-b hidden;
+  }
+  .sidebar__title {
+    @apply text-black;
+  }
+  .sidebar__content {
+    @apply p-0 h-auto;
+  }
+  .quiz-image {
+    background-color: #3ba7c5;
+    @apply bg-quiz-cover bg-cover;
+  }
+  .quiz-info {
+    overflow-y: auto;
+    height: calc(100vh - 162px);
+  }
+  .quiz-review-question {
+    height: calc(100vh - 455px);
+    overflow-y: auto;
+  }
+}
+body:has(.quiz-info),
+body:has(.quiz-review-question) {
+  overflow: hidden;
+}

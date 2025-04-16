@@ -1,0 +1,50 @@
+.nav-section-header {
+  @apply transition-all ease-in-out duration-200 p-4 cursor-pointer items-center flex border-transparent;
+}
+
+.nav-section-header svg {
+  stroke: currentColor;
+  fill: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  transition: color 200ms;
+  color: #93979e;
+}
+
+.nav-section-header span {
+  margin-left: 1rem;
+  color: #d1d5db;
+  font-weight: 600;
+  font-size: 14px;
+  transition: color 200ms;
+}
+
+.nav-section-header:hover {
+  background-color: #37415180;
+}
+
+.nav-section-header:hover svg {
+  color: #f59e0b;
+}
+
+.nav-section-header:hover span {
+  color: #ffffff;
+}
+
+.nav-section-header.active svg {
+  color: #f59e0b;
+}
+
+.nav-section-header.active {
+  @apply border-l-2 border-primary bg-gray-800 rounded-tr-md rounded-br-md transition-all ease-in-out;
+}
+
+.nav-section-header.active span {
+  @apply text-white font-bold;
+}
+
+.nav-section {
+  margin-bottom: 0.5rem;
+  padding: 4px;
+  padding-left: 0;
+}

@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+
+.splash-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, #2e2e2e, #1b1b1b, #000000);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.splash-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.splash-logo {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.splash-border {
+  position: absolute;
+  top: 6rem;
+  left: 0;
+  height: 5px;
+  background-color: #925917;
+  width: 0;
+}
+
+.splash-letter {
+  font-family: 'Playfair Display', serif;
+  font-size: 4rem;
+  color: #fff;
+  margin: 0 0.05em;
+}

@@ -1,0 +1,42 @@
+.form-container {
+  @apply text-gray-400 p-4 border rounded-2xl shadow-lg bg-white bg-opacity-95;
+
+  .form-title {
+    @apply text-lg ms-8  font-semibold text-black;
+  }
+
+  .form-grid {
+    @apply grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 p-8;
+  }
+
+  .form-grid-question {
+    @apply grid grid-cols-1 md:grid-cols-2 gap-6 p-8;
+  }
+  .field {
+    @apply my-0 w-full;
+  }
+
+  .field label {
+    @apply block text-gray-600 font-bold text-md mb-1 uppercase;
+  }
+
+  .field input,
+  .field select,
+  .field textarea {
+    @apply bg-slate-200 outline-none px-6 py-3 text-gray-800 w-full rounded-md;
+  }
+
+  .field input:focus,
+  .field select:focus,
+  .field textarea:focus {
+    @apply shadow-md;
+  }
+
+  .p-inputswitch:not(.p-disabled) .p-inputswitch-input:hover .p-inputswitch-slider {
+    @apply bg-slate-400;
+  }
+
+  .submit-button {
+    @apply text-end mt-2 md:mt-0;
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@services/*": ["./src/services/*"],
+      "@utils/*": ["./utils/*"],
+      "@slices/*": ["./src/slices/*"],
+      "@shared/*": ["./src/app/shared/*"],
+      "@hooks": ["./src/hooks"],
+      "@hooks/*": ["./src/hooks/*"],
+      "@api/*": ["./src/api/*"],
+      "@constants": ["./src/constants"],
+      "@constants/*": ["./src/constants/*"],
+      "@assets": ["./src/assets"],
+      "@assets/*": ["./src/assets/*"],
+      "@contexts/*": ["./src/contexts/*"],
+      "@helpers/*": ["./src/app/public/helpers/*"],
+      "@(admin)/*": ["./src/app/admin/*"],
+      "@(client)/*": ["./src/app/client/*"]
+    }
+  },
+  "exclude": ["node_modules", "dist"]
+}

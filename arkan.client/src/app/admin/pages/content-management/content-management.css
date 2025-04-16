@@ -1,0 +1,64 @@
+.user-profile-entry {
+  @apply flex-wrap lg:flex-nowrap;
+  .field {
+    @apply md:basis-[9rem] lg:basis-[17rem] xl:basis-[18rem] 2xl:basis-[22rem];
+  }
+  .instructor-info {
+    @apply flex-wrap xl:flex-nowrap;
+    .field {
+      @apply basis-full xl:basis-[32%];
+    }
+  }
+}
+.p-picklist {
+  .p-picklist-source-wrapper,
+  .p-picklist-target-wrapper {
+    @apply rounded-3.5xl shadow-md;
+  }
+}
+.p-picklist-list-wrapper {
+  @apply bg-slate-950;
+  .p-picklist-header {
+    @apply bg-slate-950 text-white;
+  }
+  .p-picklist-filter-container {
+    @apply border-b p-1;
+    .p-picklist-filter input {
+      @apply p-3;
+    }
+  }
+
+  .p-picklist-list .p-picklist-item {
+    @apply text-gray-300 border-b border-slate-800 last:border-none bg-slate-700;
+    &.p-highlight {
+      @apply bg-slate-300 text-black;
+    }
+    &.p-focus {
+      @apply bg-slate-500;
+    }
+  }
+}
+.p-picklist-source-wrapper {
+  .p-picklist-source {
+    @apply bg-slate-950;
+  }
+  .p-picklist-list .p-picklist-item {
+    &.p-highlight {
+      @apply bg-slate-500 text-black;
+    }
+    &.p-focus {
+      @apply bg-slate-500 text-black;
+    }
+  }
+}
+
+.p-picklist-buttons {
+  @apply gap-2;
+  .p-button {
+    @apply bg-blue-700 text-white !border;
+  }
+  button[aria-label='Move All to Source'],
+  button[aria-label='Move All to Target'] {
+    @apply hidden;
+  }
+}

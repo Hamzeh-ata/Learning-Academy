@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.VisualStudio.JavaScript.Sdk/1.0.1013726">
+  <PropertyGroup>
+    <StartupCommand>npm run dev</StartupCommand>
+    <JavaScriptTestRoot>src\</JavaScriptTestRoot>
+    <JavaScriptTestFramework>Jest</JavaScriptTestFramework>
+    <!-- Allows the build (or compile) script located on package.json to run on Build -->
+    <ShouldRunBuildScript>false</ShouldRunBuildScript>
+    <!-- Folder where production build objects will be placed -->
+    <PublishAssetsDirectory>$(MSBuildProjectDirectory)\dist</PublishAssetsDirectory>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="src\app\admin\features\activity-log\activity-list\" />
+    <Folder Include="src\app\admin\features\change-password-requests\change-password-requests-list\components\" />
+    <Folder Include="src\app\admin\features\frequently-questions\frequently-questions-list\" />
+    <Folder Include="src\app\admin\features\frequently-questions\components\" />
+    <Folder Include="src\app\admin\features\quiz-attempts\attempts-list\" />
+    <Folder Include="src\app\admin\features\student-chapters\students-list\" />
+    <Folder Include="src\app\admin\features\students\student-seasions\" />
+    <Folder Include="src\app\admin\pages\change-password-requests\" />
+    <Folder Include="src\app\admin\pages\frequently-questions\" />
+    <Folder Include="src\app\admin\pages\students-chapters\" />
+    <Folder Include="src\app\admin\pages\quiz-attempts\" />
+    <Folder Include="src\app\public\features\home-page\categories-section\" />
+    <Folder Include="src\app\shared\components\icons\accept-icon\" />
+    <Folder Include="src\app\shared\components\icons\excel-icon\" />
+    <Folder Include="src\app\shared\components\icons\chapters-management\" />
+  </ItemGroup>
+</Project>

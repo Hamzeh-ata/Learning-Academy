@@ -1,0 +1,37 @@
+.faq-container {
+  .p-accordion-tab {
+    @apply border-b border-blue-grey-300;
+  }
+  .p-accordion .p-accordion-header:not(.p-disabled).p-highlight:hover .p-accordion-header-link {
+    @apply shadow-none ring-0 outline-none;
+  }
+  :focus-visible {
+    outline: none;
+  }
+  .p-accordion-header {
+    @apply p-4;
+    &:hover {
+      &,
+      .p-accordion-header-link {
+        @apply bg-blue-grey-100;
+      }
+    }
+  }
+  .p-accordion-content {
+    @apply p-4;
+  }
+  .p-accordion .p-accordion-header .p-accordion-header-link {
+    @apply rounded-none;
+  }
+  .p-accordion-header-link {
+    @apply text-black bg-white text-base font-normal;
+  }
+  .p-accordion
+    .p-accordion-header:not(.p-highlight):not(.p-disabled):hover:not(.p-disabled)
+    .p-accordion-header-link:focus {
+    @apply shadow-none outline-none;
+  }
+  .p-accordion .p-accordion-header:not(.p-highlight):not(.p-disabled):hover .p-accordion-header-link {
+    @apply shadow-none outline-none;
+  }
+}

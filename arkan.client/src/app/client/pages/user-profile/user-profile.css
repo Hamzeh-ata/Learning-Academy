@@ -1,0 +1,13 @@
+.user-profile {
+  .p-sidebar-content {
+    @apply bg-white text-black;
+  }
+  .sidebar__title {
+    @apply font-semibold text-black;
+  }
+  .p-sidebar-content {
+    .sidebar__header {
+      @apply border-b bg-opacity-90 bg-white;
+    }
+  }
+}

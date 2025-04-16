@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34322.80
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Arkan.Server", "Arkan.Server\Arkan.Server.csproj", "{14BA8C61-254F-4A75-81BA-6C890C0F9018}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "arkan.client", "arkan.client\arkan.client.esproj", "{C4DAD306-2CB8-4AA5-B27E-A84E2DE9E925}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{14BA8C61-254F-4A75-81BA-6C890C0F9018}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14BA8C61-254F-4A75-81BA-6C890C0F9018}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14BA8C61-254F-4A75-81BA-6C890C0F9018}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{14BA8C61-254F-4A75-81BA-6C890C0F9018}.Debug|x64.Build.0 = Debug|Any CPU
+		{14BA8C61-254F-4A75-81BA-6C890C0F9018}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14BA8C61-254F-4A75-81BA-6C890C0F9018}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14BA8C61-254F-4A75-81BA-6C890C0F9018}.Release|x64.ActiveCfg = Release|Any CPU
+		{14BA8C61-254F-4A75-81BA-6C890C0F9018}.Release|x64.Build.0 = Release|Any CPU
+		{C4DAD306-2CB8-4AA5-B27E-A84E2DE9E925}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{C4DAD306-2CB8-4AA5-B27E-A84E2DE9E925}.Debug|x64.ActiveCfg = Debug|x64
+		{C4DAD306-2CB8-4AA5-B27E-A84E2DE9E925}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4DAD306-2CB8-4AA5-B27E-A84E2DE9E925}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4DAD306-2CB8-4AA5-B27E-A84E2DE9E925}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{C4DAD306-2CB8-4AA5-B27E-A84E2DE9E925}.Release|x64.ActiveCfg = Release|x64
+		{C4DAD306-2CB8-4AA5-B27E-A84E2DE9E925}.Release|x64.Build.0 = Release|x64
+		{C4DAD306-2CB8-4AA5-B27E-A84E2DE9E925}.Release|x64.Deploy.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {87DEECCE-51F0-4F5C-971F-EF4362A51791}
+	EndGlobalSection
+EndGlobal

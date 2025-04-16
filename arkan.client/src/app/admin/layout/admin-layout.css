@@ -1,0 +1,214 @@
+body:has(.admin-layout) {
+  @apply bg-gray-800;
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px rgb(51 65 85 / var(--tw-bg-opacity)) inset !important;
+    transition:
+      background-color 5000s ease-in-out 0s,
+      color 600000s 0s;
+    -webkit-background-clip: text;
+    color: #fff !important;
+  }
+  .swal2-popup.swal2-toast {
+    background: #262626 !important;
+    box-shadow: 0 0 0.625em #000000 !important;
+  }
+
+  .swal2-html-container {
+    @apply text-sm font-semibold mx-3 !text-gray-200;
+  }
+
+  .swal2-popup {
+    background-color: #1f1f1f !important;
+  }
+
+  .table {
+    @apply w-full table-auto;
+  }
+
+  .table th {
+    @apply text-gray-200 text-left text-sm uppercase border-b-2 border-gray-600 py-4;
+  }
+
+  .table td {
+    @apply text-md py-4 text-gray-300 border-b border-gray-700;
+  }
+
+  .swal2-file,
+  .swal2-input,
+  .swal2-textarea {
+    border: none !important;
+    background-color: #2a2a2a !important;
+    color: white !important;
+  }
+
+  .swal2-styled.swal2-confirm {
+    background-color: #2f873c !important;
+  }
+  .swal2-styled.swal2-cancel {
+    color: #892121 !important;
+    background: transparent !important;
+    border: 1px solid #892121 !important;
+  }
+
+  .swal2-styled.swal2-cancel:hover {
+    background: #892121 !important;
+    color: white !important;
+  }
+
+  .swal2-title {
+    font-size: 1em !important;
+    color: white !important;
+  }
+  .swal2-container {
+    z-index: 9999 !important;
+  }
+
+  .p-inputtext,
+  .p-component {
+    @apply font-[inherit];
+  }
+
+  .field {
+    @apply my-6 w-full;
+
+    label {
+      @apply block text-gray-400 font-bold text-sm mb-1 uppercase;
+    }
+
+    input,
+    select,
+    textarea {
+      @apply bg-slate-700 outline-none px-6 py-3 text-gray-300 w-full rounded-md text-base;
+      &:focus {
+        box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.5);
+        border: none;
+      }
+    }
+    .p-focus {
+      @apply ring-0 outline-none shadow-none border-none;
+    }
+
+    .p-dropdown-label,
+    .p-inputtext,
+    .p-multiselect-label {
+      @apply text-gray-200;
+    }
+    textarea {
+      @apply outline-none px-4 py-2 rounded w-full border-black resize-none;
+    }
+    .p-calendar-w-btn {
+      width: 100%;
+      .p-inputtext {
+        @apply rounded-e-none;
+      }
+    }
+
+    .p-datepicker-trigger {
+      @apply bg-arkan text-white hover:animate-pulse;
+      &:has(:focus, :hover) {
+        @apply shadow-none outline-none;
+      }
+    }
+  }
+
+  .p-multiselect-filter {
+    @apply text-black ps-2;
+  }
+  .p-virtualscroller .p-dropdown-item:hover {
+    @apply bg-slate-500 text-white shadow-none outline-none;
+  }
+
+  .btn {
+    @apply bg-teal-600 text-white outline-none px-4 py-3 rounded-md transition-all duration-200 hover:bg-teal-800 hover:animate-pulse disabled:cursor-not-allowed focus:outline-none;
+    &.danger {
+      @apply bg-red-700;
+    }
+  }
+
+  .p-button:focus {
+    @apply shadow-none;
+  }
+
+  *:disabled {
+    @apply cursor-not-allowed opacity-50;
+  }
+
+  .p-sidebar-content {
+    @apply overflow-y-auto bg-gray-800;
+  }
+
+  .sidebar__content {
+    @apply overflow-x-hidden h-[calc(100vh_-_120px)];
+    @apply mobile:px-6;
+  }
+
+  .sidebar__header {
+    @apply py-7;
+  }
+
+  .sidebar__icon {
+    @apply z-10 inset-y-0 my-auto;
+  }
+
+  .p-dropdown {
+    @apply w-full bg-slate-700 py-1 rounded-md pl-3;
+  }
+
+  .p-inputswitch.p-highlight .p-inputswitch-slider {
+    @apply bg-brand-200;
+  }
+
+  .p-image-toolbar {
+    @apply text-gray-400;
+  }
+
+  .p-image-preview-enter-done {
+    @apply bg-white;
+  }
+
+  .p-image-preview-container:hover {
+    img {
+      @apply brightness-50;
+    }
+  }
+  .p-image-preview-indicator {
+    @apply text-slate-100;
+  }
+  .p-dataview-content,
+  .p-paginator {
+    @apply bg-transparent;
+  }
+  .p-paginator {
+    @apply text-slate-300;
+    .p-dropdown {
+      @apply w-auto bg-slate-800 p-0;
+      .p-dropdown-label {
+        @apply text-gray-200;
+      }
+    }
+  }
+
+  .arkan-modal {
+    @apply bg-gray-800;
+  }
+
+  .p-multiselect-token-label {
+    @apply text-arkan-dark p-1;
+  }
+  .p-multiselect-token-icon {
+    @apply hover:text-red-400;
+  }
+
+  .p-virtualscroller-content {
+    .p-dropdown-item-label {
+      @apply w-full;
+    }
+  }
+
+  .p-autocomplete-panel .p-autocomplete-items .p-autocomplete-item {
+    @apply p-0 border-b border-blue-grey-300 last:border-0;
+  }
+}

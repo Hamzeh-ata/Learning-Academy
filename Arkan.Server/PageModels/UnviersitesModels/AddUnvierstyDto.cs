@@ -1,0 +1,12 @@
+﻿using System.ComponentModel.DataAnnotations;
+namespace Arkan.Server.PageModels.UnviersitesModels
+{
+    public class AddUnvierstyDto
+    {
+        [Required]
+        public string Name { get; set; }
+        public string ShortName { get; set; }
+        public IFormFile Image { get; set; }
+
+    }
+}

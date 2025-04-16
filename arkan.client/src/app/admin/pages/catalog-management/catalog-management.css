@@ -1,0 +1,36 @@
+.course-sidebar .p-sidebar-content {
+  @apply overflow-y-auto bg-gray-800;
+}
+.course-sidebar .sidebar__content {
+  @apply overflow-x-hidden h-[calc(100vh_-_120px)];
+  @apply mobile:px-6;
+}
+.course-sidebar .sidebar__icon {
+  @apply z-10 inset-y-0 my-auto;
+}
+.course-sidebar .sidebar__header {
+  @apply py-7;
+}
+
+body:has(.admin-layout) .course-entry {
+  .field {
+    @apply xl:w-[30%] 2xl:w-[32%] my-0;
+  }
+  .custom-field {
+    @apply w-full;
+  }
+}
+.category-sidebar .p-sidebar-content {
+  @apply overflow-y-auto bg-gray-800;
+}
+
+.category-sidebar .sidebar__content {
+  @apply overflow-x-hidden h-[calc(100vh_-_120px)];
+  @apply mobile:px-6;
+}
+.category-sidebar .sidebar__icon {
+  @apply z-10 inset-y-0 my-auto;
+}
+.category-sidebar .sidebar__header {
+  @apply py-7;
+}

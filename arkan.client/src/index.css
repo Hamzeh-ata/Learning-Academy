@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  @apply bg-[#eee];
+  scroll-behavior: smooth;
+}
+
+body,
+.p-inputtext,
+.p-reset,
+.p-component {
+  font-size: 16px;
+  font-family: poppins, 'Open Sans', sans-serif;
+}
+
+.swal2-styled.swal2-confirm {
+  background-color: #2f873c !important;
+}
+.swal2-styled.swal2-cancel {
+  color: #892121 !important;
+  background: transparent !important;
+  border: 1px solid #892121 !important;
+}
+
+.swal2-styled.swal2-cancel:hover {
+  background: #892121 !important;
+  color: white !important;
+}
+
+.swal2-container {
+  z-index: 9999 !important;
+}
+
+.field {
+  @apply my-0 w-full;
+
+  label {
+    @apply block text-gray-600 font-bold text-md mb-1 uppercase;
+  }
+
+  input,
+  select,
+  textarea {
+    @apply bg-slate-200 outline-none px-6 py-3 text-gray-800 w-full rounded-md;
+    &:focus {
+      @apply shadow-md;
+    }
+  }
+  .p-focus {
+    @apply ring-0 outline-none border-none shadow-md;
+  }
+  .p-inputswitch:not(.p-disabled):has(.p-inputswitch-input:hover) .p-inputswitch-slider {
+    @apply bg-slate-400;
+  }
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px rgb(226 232 240 / var(--tw-bg-opacity)) inset !important;
+    transition:
+      background-color 5000s ease-in-out 0s,
+      color 600000s 0s;
+    -webkit-background-clip: text;
+    @apply !text-gray-800 bg-slate-200;
+  }
+
+  .p-dropdown-label,
+  .p-inputtext,
+  .p-multiselect-label {
+    @apply text-gray-800;
+  }
+
+  .p-placeholder {
+    @apply text-gray-500;
+  }
+
+  .p-dropdown {
+    @apply w-full bg-slate-200 py-1 rounded-md pl-3;
+  }
+
+  textarea {
+    @apply outline-none px-4 py-2 rounded w-full border-black resize-none;
+  }
+  .p-calendar-w-btn {
+    width: 100%;
+  }
+
+  .p-datepicker-trigger {
+    @apply bg-arkan text-white;
+    &:has(:focus, :hover) {
+      @apply shadow-none outline-none;
+    }
+  }
+}
+
+.p-multiselect-filter {
+  @apply text-black ps-2;
+}
+.p-virtualscroller .p-dropdown-item:hover {
+  @apply bg-slate-500 text-white shadow-none outline-none;
+}
+
+.btn {
+  @apply bg-teal-600 text-white outline-none px-4 py-3 rounded-md transition-all duration-200 hover:bg-teal-800 disabled:cursor-not-allowed focus:outline-none;
+  &.danger {
+    @apply bg-red-700;
+  }
+}
+
+.p-button:focus {
+  @apply shadow-none;
+}
+
+*:disabled {
+  @apply cursor-not-allowed opacity-50;
+}
+
+.p-sidebar-content {
+  @apply overflow-y-auto bg-gray-800;
+}
+
+.sidebar__content {
+  @apply overflow-x-hidden h-[calc(100vh_-_120px)];
+  @apply mobile:px-6;
+}
+
+.sidebar__header {
+  @apply py-7;
+}
+
+.sidebar__icon {
+  @apply z-10 inset-y-0 my-auto;
+}
+
+.p-inputswitch.p-highlight .p-inputswitch-slider {
+  @apply bg-arkan;
+}
+
+.p-image-toolbar {
+  @apply text-gray-400;
+}
+
+.p-image-preview-enter-done {
+  @apply bg-white;
+}
+
+.p-image-preview-container:hover {
+  img {
+    @apply brightness-50;
+  }
+}
+.p-image-preview-indicator {
+  @apply text-slate-100;
+}
+.p-dataview-content {
+  @apply bg-transparent;
+}
+
+.p-image-preview-indicator {
+  &:focus-within,
+  &:focus-visible {
+    @apply outline-none;
+  }
+}
+
+.p-carousel-item {
+  @apply flex w-full justify-center;
+}
+.p-carousel-content {
+  @apply max-w-[1440px];
+}
+.p-carousel-items-content {
+  @apply py-5;
+}
+
+.p-paginator .p-paginator-pages .p-paginator-page.p-highlight {
+  @apply font-semibold underline;
+}
+
+.p-paginator {
+  &,
+  & .p-dropdown {
+    @apply bg-transparent;
+  }
+}
+
+.p-menu .p-menu-separator {
+  @apply border-t border-blue-grey-300;
+}
+
+.p-menuitem-link {
+  @apply hover:ring-0 hover:bg-slate-200;
+  &.active {
+    @apply font-semibold;
+  }
+}
+
+.p-avatar img {
+  width: 100%;
+  height: 100%;
+}
+
+.arkan-modal {
+  @apply bg-white w-full md:w-4/5 xl:w-3/5;
+}
+
+.p-accordion-header-link {
+  @apply bg-blue-grey-300;
+}
+
+.scrollable {
+  overflow-x: auto;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.table {
+  @apply w-full min-w-[750px];
+  th {
+    @apply text-gray-600 text-left text-base uppercase py-4;
+  }
+  td {
+    @apply text-base py-4 text-gray-800;
+  }
+}
+
+.table tbody tr {
+  @apply border-b border-blue-grey-500;
+  &:last-child {
+    @apply border-none;
+  }
+}
+
+.shake-element {
+  @apply animate-shake;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: 0.71em !important;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgb(43 51 62) !important;
+}
+
+::-webkit-scrollbar-thumb {
+  outline: none !important;
+  background-color: #536269 !important;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #434e53;
+}
+
+@media (min-width: 320px) and (max-width: 500px) {
+  .p-carousel-content {
+    @apply max-w-[320px];
+  }
+}
+
+@media (min-width: 500px) and (max-width: 700px) {
+  .p-carousel-content {
+    @apply max-w-[420px];
+  }
+}
+
+@media (min-width: 700px) and (max-width: 769px) {
+  .p-carousel-content {
+    @apply max-w-[620px];
+  }
+
+  .p-carousel-item:has(.course-card) {
+    @apply flex w-full justify-center !flex-none !basis-[0.2rem];
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1280px) {
+  .p-carousel-content {
+    @apply max-w-[830px];
+  }
+  .p-carousel-item:has(.course-card) {
+    @apply flex w-full justify-center !flex-none !basis-[25rem];
+  }
+}

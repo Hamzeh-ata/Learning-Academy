@@ -1,0 +1,11 @@
+<svg width="258" height="173" viewBox="0 0 258 173" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<rect x="0.5" y="0.5" width="257" height="172" stroke="white" />
+	<line y1="57.5" x2="258" y2="57.5" stroke="white" stroke-opacity="0.6" stroke-dasharray="2 2" />
+	<line x1="4.37114e-08" y1="115.5" x2="258" y2="115.5" stroke="white" stroke-opacity="0.6" stroke-dasharray="2 2" />
+	<line x1="86.5" y1="-2.18557e-08" x2="86.5" y2="173" stroke="white" stroke-opacity="0.6" stroke-dasharray="2 2" />
+	<line x1="171.5" y1="2" x2="171.5" y2="173" stroke="white" stroke-opacity="0.6" stroke-dasharray="2 2" />
+	<g opacity="0.6">
+		<path fill-rule="evenodd" clip-rule="evenodd" d="M129 79.667C129.461 79.667 129.834 80.0774 129.834 80.5837V93.417C129.834 93.9233 129.461 94.3337 129 94.3337C128.54 94.3337 128.167 93.9233 128.167 93.417V80.5837C128.167 80.0774 128.54 79.667 129 79.667Z" fill="white" />
+		<path fill-rule="evenodd" clip-rule="evenodd" d="M122.333 86.9997C122.333 86.4934 122.706 86.083 123.166 86.083H134.833C135.293 86.083 135.666 86.4934 135.666 86.9997C135.666 87.5059 135.293 87.9163 134.833 87.9163H123.166C122.706 87.9163 122.333 87.5059 122.333 86.9997Z" fill="white" />
+	</g>
+</svg>

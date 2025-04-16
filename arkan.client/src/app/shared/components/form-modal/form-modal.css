@@ -1,0 +1,78 @@
+.sb-modal {
+  @apply fixed inset-0 z-max mobile:max-w-[375px] mx-auto;
+
+  .sb-modal--large,
+  .sb-modal--side {
+    @apply max-w-[600px] lg:max-w-none;
+  }
+
+  .sb-modal--small {
+    @apply max-w-[460px];
+  }
+
+  .sb-modal--side {
+    @apply h-auto me-0;
+  }
+
+  .sb-modal__mask {
+    @apply fixed flex items-center justify-center bg-backdrop-grey inset-0 z-[-1] opacity-100;
+    transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  }
+
+  .sb-modal__header--form {
+    @apply justify-between;
+
+    .sb-modal__title {
+      @apply leading-8;
+    }
+  }
+
+  .sb-modal__header--confirmation,
+  .sb-modal__header--info {
+    .sb-modal__close-icon {
+      @apply absolute top-6 cursor-pointer end-6;
+    }
+  }
+
+  .sb-modal__header--form,
+  .sb-modal__header--confirmation,
+  .sb-modal__header--info {
+    @apply flex mb-4;
+    .sb-modal__close-icon {
+      @apply text-blue-grey-400 h-max;
+    }
+  }
+
+  .sb-modal__header--info {
+    @apply mb-2;
+    .sb-modal__title {
+      @apply text-lg font-semibold leading-[30px];
+    }
+  }
+
+  .sb-modal__header {
+    .sb-modal__header--confirmation {
+      @apply self-center;
+    }
+  }
+
+  .sb-modal__title {
+    @apply text-black font-bold text-2xl word-break;
+  }
+
+  > .modal-dialog {
+    @apply z-50 h-fit m-auto fixed inset-0 lg:place-self-center xs:mx-4 md:mx-auto;
+    > .modal-content {
+      @apply w-full h-fit flex flex-col text-body-text-color bg-white shadow-lg rounded-base p-10 border-0 relative overflow-hidden ring-offset-0 ring-0;
+      > .modal-body {
+        @apply p-0;
+      }
+    }
+  }
+
+  .sb-modal--form.sb-modal--large {
+    > .modal-content {
+      @apply max-w-[824px] w-[824px] mobile:w-full;
+    }
+  }
+}

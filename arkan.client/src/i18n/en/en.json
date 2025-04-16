@@ -1,0 +1,37 @@
+{
+  "translation": {
+    "headerTitle": "My {{appName}} Header Title"
+  },
+  "dropzone": {
+    "dropFiles": "Drop files here or ",
+    "clickUpload": "click to upload",
+    "acceptedFiles": "Accepted formats are .doc, .docx, .pdf, .txt, .rtf, .jpg and .png (file must be 5MBs or less).",
+    "dynamicAcceptedFiles": "Accepted formats are {{types}} and {{lastType}} (file must be 5MBs or less).",
+    "fileTypeError": "File format not supported. Please try again.",
+    "fileSizeError": "File too large. Please try again."
+  },
+  "homePage": {
+    "courseSection": {
+      "title": "Browse Our Best",
+      "subTitle": "Courses",
+      "action": "View All Courses"
+    },
+    "universitySection": {
+      "title": "Discover Our",
+      "subTitle": "Universities"
+    },
+    "categorySection": {
+      "title": "Discover Our",
+      "subTitle": "Categories"
+    },
+    "teamTitle": "Meet The Team"
+  },
+  "teachers": "Teachers",
+  "students": "Students",
+  "courses": "Courses",
+  "videos": "Videos",
+  "aboutUs": "About Us",
+  "social": "Social",
+  "contactUs": "Contact Us",
+  "copyRights": "All Rights Reserved."
+}

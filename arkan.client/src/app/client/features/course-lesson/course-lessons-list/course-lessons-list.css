@@ -1,0 +1,22 @@
+.lessons-list {
+  max-height: 550px;
+  overflow-y: auto;
+  .p-accordion-tab {
+    border: 1px solid #ccc;
+  }
+  .p-accordion .p-accordion-header:not(.p-disabled).p-highlight:hover .p-accordion-header-link {
+    @apply shadow-none ring-0 outline-none;
+  }
+  :focus-visible {
+    outline: none;
+  }
+  .p-accordion-content {
+    padding: 0;
+  }
+  .p-accordion .p-accordion-header .p-accordion-header-link {
+    @apply rounded-none;
+  }
+  .p-accordion-header-link {
+    @apply text-white bg-slate-800 text-base font-normal;
+  }
+}

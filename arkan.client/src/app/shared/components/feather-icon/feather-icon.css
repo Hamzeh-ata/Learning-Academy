@@ -1,0 +1,7 @@
+.sb-icon--clickable {
+  @apply cursor-pointer;
+}
+
+.sb-icon--disabled {
+  @apply opacity-50 cursor-not-allowed;
+}

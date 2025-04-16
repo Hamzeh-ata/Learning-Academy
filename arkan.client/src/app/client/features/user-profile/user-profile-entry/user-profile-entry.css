@@ -1,0 +1,10 @@
+.user-profile-entry {
+  .field {
+    @apply w-full md:w-[48%];
+  }
+  .instructor-info {
+    .field {
+      @apply w-full md:w-[48%];
+    }
+  }
+}

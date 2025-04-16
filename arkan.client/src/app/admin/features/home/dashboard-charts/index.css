@@ -1,0 +1,5 @@
+.dashboard-charts {
+  .p-inputtext {
+    @apply bg-slate-700 text-slate-200;
+  }
+}

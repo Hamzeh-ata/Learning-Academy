@@ -1,0 +1,25 @@
+.course-profile {
+  .p-sidebar-content {
+    @apply bg-white text-black;
+  }
+  .sidebar__title {
+    @apply font-semibold text-black;
+  }
+}
+.p-sidebar-full:has(.course-profile) {
+  .p-sidebar {
+    @apply w-full h-full mt-0 rounded-none;
+  }
+}
+.quiz-entry {
+  .p-sidebar-content {
+    @apply bg-no-repeat bg-cyan-500 bg-fixed bg-quiz-cover bg-right pb-2;
+    .sidebar__header {
+      @apply border-b bg-opacity-90 bg-white;
+    }
+  }
+  .sidebar__content {
+    height: calc(100vh - 70px);
+    backdrop-filter: brightness(0.5);
+  }
+}

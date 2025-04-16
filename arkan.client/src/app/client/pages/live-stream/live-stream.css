@@ -1,0 +1,35 @@
+.live-stream-container {
+  .p-sidebar-content {
+    @apply bg-white text-black;
+  }
+  .sidebar__title {
+    @apply font-semibold text-black;
+  }
+  .p-sidebar-content {
+    .sidebar__header {
+      @apply border-b bg-opacity-90 bg-white;
+    }
+  }
+}
+
+.custom-card-content {
+  box-shadow: 2px 2px 11px 1px #0000001c;
+  @apply relative justify-between flex-col flex p-4 pb-0 rounded-1xl bg-white w-full md:w-[45%];
+  .custom-card-body {
+    @apply p-4 relative rounded-1xl space-y-2;
+
+    i {
+      color: #85858d;
+      font-size: 19px;
+      padding: 8px;
+      background: #ffffff;
+      border-top-left-radius: 14px;
+      box-shadow: 0 0 4px 0 #0000001c;
+      margin-top: 8px;
+      place-self: end;
+    }
+  }
+  .text-muted {
+    @apply text-sm text-slate-600;
+  }
+}

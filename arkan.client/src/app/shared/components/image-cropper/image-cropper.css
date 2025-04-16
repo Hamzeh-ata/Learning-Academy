@@ -1,0 +1,50 @@
+.image-cropper {
+  @apply max-h-[22rem] overflow-y-auto mb-8 md:pe-2;
+
+  &__controls {
+    @apply mb-6 hidden;
+  }
+
+  &__container,
+  &__actions {
+    @apply flex gap-4;
+  }
+
+  &__actions {
+    @apply items-center justify-end;
+  }
+
+  &__preview {
+    @apply mobile:hidden;
+    canvas {
+      @apply w-[150px] max-w-[500px];
+    }
+  }
+
+  &__editor {
+    @apply md:w-2/3 mobile:w-full;
+  }
+
+  &__caption {
+    @apply text-center font-medium mt-2 text-black;
+  }
+
+  .ReactCrop {
+    @apply w-full mobile:max-w-fit mobile:w-fit;
+
+    &__crop-selection {
+      @apply bg-[url(/assets/icons/image-cropper.svg)] border-none;
+    }
+
+    &__child-wrapper {
+      img {
+        @apply w-full h-[320px] object-contain;
+      }
+
+      &,
+      img {
+        @apply mobile:max-w-fit mobile:w-fit;
+      }
+    }
+  }
+}

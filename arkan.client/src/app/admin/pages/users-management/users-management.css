@@ -1,0 +1,15 @@
+.instructor-sidebar .sidebar__content {
+  @apply overflow-x-hidden h-[calc(100vh_-_100px)];
+  @apply mobile:px-6;
+}
+
+.instructor-sidebar .sidebar__footer {
+  @apply pe-12;
+}
+
+.instructor-sidebar .tabs-nav {
+  @apply justify-center;
+}
+.instructor-sidebar .card {
+  @apply m-0 p-2;
+}

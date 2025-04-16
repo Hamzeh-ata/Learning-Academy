@@ -1,0 +1,4 @@
+{
+  "*.js": ["eslint . --ext js,jsx --report-unused-disable-directives", "prettier --write --ignore-unknown ."],
+  "*.css": "prettier --write --ignore-unknown ."
+}

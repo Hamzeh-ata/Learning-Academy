@@ -1,0 +1,122 @@
+.drop-zone-container {
+  @apply mobile:overflow-x-auto mobile:pb-base;
+}
+
+.drop-zone-container .dropzone {
+  @apply w-full flex flex-col place-items-center p-0 gap-2 cursor-pointer;
+}
+
+.drop-zone-container .dropzone__area {
+  @apply rounded-3xl flex items-center p-5 bg-[url(/src/assets/icons/dropzone-border.svg)] mobile:max-w-[288px] text-center justify-center;
+}
+
+.drop-zone-container .dropzone__area--hidden {
+  @apply hidden;
+}
+
+.drop-zone-container .dropzone__description {
+  @apply justify-center;
+}
+
+.drop-zone-container .dropzone,
+.drop-zone-container .dropzone__icon,
+.drop-zone-container .dropzone__area,
+.drop-zone-container .dropzone__title,
+.drop-zone-container .dropzone__uploaded,
+.drop-zone-container .dropzone__file-info,
+.drop-zone-container .dropzone__description,
+.drop-zone-container .dropzone__uploaded-container {
+  @apply flex;
+}
+
+.drop-zone-container .dropzone__title {
+  @apply text-blue-grey-600 font-semibold gap-1 flex-wrap justify-center;
+}
+
+.drop-zone-container .dropzone__hint,
+.drop-zone-container .dropzone__formats {
+  @apply text-blue-grey-400 text-sm font-normal;
+}
+
+.drop-zone-container .dropzone__hint {
+  @apply font-bold;
+}
+
+.drop-zone-container .dropzone__uploaded {
+  @apply p-4 gap-2 drop-shadow border border-blue-grey-300 rounded-base items-center justify-between min-w-[260px] w-[404px];
+}
+
+.drop-zone-container .dropzone__uploaded-container {
+  @apply mt-4 flex-row gap-4 flex-wrap mobile:flex-nowrap mb-2;
+}
+
+.drop-zone-container .dropzone__uploaded-rejected {
+  @apply bg-light-pink border border-error-100 rounded-base;
+}
+
+.drop-zone-container .dropzone__file-info {
+  @apply gap-4;
+}
+
+.drop-zone-container .dropzone__file-name,
+.drop-zone-container .dropzone__file-name-error {
+  @apply text-blue-grey-500 text-base break-words max-w-[400px] line-clamp-1 overflow-hidden break-all mobile:whitespace-pre-wrap;
+}
+
+.drop-zone-container .dropzone__file-name-error {
+  @apply text-error-100;
+}
+
+.drop-zone-container .dropzone__file-size {
+  @apply text-blue-grey-400 text-md;
+}
+
+.drop-zone-container .dropzone__file-error {
+  @apply text-error-200 font-medium text-base break-words;
+}
+
+.drop-zone-container .dropzone__description {
+  @apply flex-col gap-1;
+}
+
+.drop-zone-container .dropzone__icon {
+  @apply w-[37px] h-[37px] self-center min-w-[37px];
+}
+
+.drop-zone-container .dropzone__icon img {
+  @apply rounded-full w-full object-cover;
+}
+
+.drop-zone-container .dropzone__actions {
+  @apply flex gap-2;
+}
+
+.drop-zone-container .dropzone__actions-download {
+  @apply text-brand-dark;
+}
+
+.drop-zone-container .dropzone__actions-delete {
+  @apply text-error-100;
+}
+
+.drop-zone-container .dropzone__upload-icon {
+  @apply text-blue-grey-500;
+}
+
+.dropzone-clickable-container {
+  border: 1px solid #d5cfcf;
+  width: 125px;
+  border-radius: 65%;
+  padding: 20px;
+  display: flex;
+  height: 124px;
+}
+
+body:has(.admin-layout) {
+  .drop-zone-container .dropzone__title {
+    @apply text-blue-grey-200;
+  }
+  .drop-zone-container .dropzone__upload-icon {
+    @apply text-blue-grey-300;
+  }
+}
